@@ -10,14 +10,39 @@
     <nav>
         <a href="../index.html">Home</a>
     </nav>
-    <main>
-        <div class="main-heading">
-            <h1>Digital Clock</h1>
-        </div>
-        <div class="content">
-            <h2>Your Local Time</h2>
-            <div class="clock"></div>
-        </div>
+    <main class="container">
+        <div id="time">
+            <div class="circle" style="--color: #ff2972">
+              <div class="dots h_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+              </svg>
+              <div id="hours">00</div>
+              <span>hours</span>
+            </div>
+            <div class="circle" style="--color: #fee800">
+              <div class="dots m_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+              </svg>
+              <div id="minutes">00</div>
+              <span>minutes</span>
+            </div>
+            <div class="circle" style="--color: #04fc43">
+              <div class="dots s_dot"></div>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+              </svg>
+              <div id="seconds">00</div>
+              <span>seconds</span>
+            </div>
+            <div class="ap">
+              <div id="ampm">AM</div>
+            </div>
+          </div>
     </main>
     <script src="script.js"></script>
 </body>
